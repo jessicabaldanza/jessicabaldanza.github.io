@@ -71,12 +71,15 @@ a:hover {
 }
 
 
-img {
+/* img {
   z-index: 10;
   /* padding: 10em 0 0 6em; */
   transform: translate(6em, 10em);
-}
+} */
 
+.italic {
+  font-style: italic;
+}
 
 @media (max-width: 760px) {
   img {
