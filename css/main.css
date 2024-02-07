@@ -65,6 +65,10 @@ a:hover {
   min-height: 100vh;
 }
 
+#footer {
+  text-align: center;
+}
+
 .image {
   display: flex;
   justify-content: center;
@@ -119,6 +123,12 @@ a:hover {
 
   #selected-writing {
     width: 297.3px;
+  }
+
+  #footer {
+    width: 980px;
+    margin: 0 auto;
+    text-align: left;
   }
 
   .image {
