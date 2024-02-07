@@ -1,6 +1,6 @@
 body {
   font-family: Arial;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
@@ -11,7 +11,8 @@ body {
 }
 
 ul {
-  padding-left: 18.4px;
+  padding-left: 1em;
+  list-style-type:none;
 }
 
 li {
@@ -51,26 +52,80 @@ a:hover {
   padding-bottom: 0.7em;
 }
 
+#bio {
+  margin-bottom: 3em;
+}
+
 #container {
   margin: 4em auto;
   width: 380px;
 }
 
-#image {
+#nonfooter {
+  min-height: 100vh;
+}
+
+.image {
   display: flex;
   justify-content: center;
+}
+
+.desktop {
+  display:none;
 }
 
 @media (min-width: 575px) {
   
 }
 
-@media (max-width: 760px) {
+@media (min-width: 760px) {
 
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
+  .mobile {
+    display: none;
+  }
 
+  .desktop {
+    display: block;
+  }
+
+  #container {
+    /* display: flex;
+    flex-direction: row; */
+    /* width: auto; */
+    width: 980px;
+    margin: auto;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .desktop-flex {
+    align-items: center;
+  }
+
+  .contact {
+    margin-left: 1em;
+  }
+
+  #bio {
+    width: 682.7px;
+  }
+
+  #selected-writing {
+    width: 297.3px;
+  }
+
+  .image {
+    width:333px;
+    height: auto;
+    align-self: flex-start;
+  }
 }
 
 @media (min-width: 1300px) {
